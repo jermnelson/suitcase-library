@@ -1,0 +1,112 @@
+@prefix schema: <http://schema.org/> .
+@prefix library: <http://purl.org/library/> .
+@prefix genont: <http://www.w3.org/2006/gen/ont#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bgn:   <http://bibliograph.net/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wdrs:  <http://www.w3.org/2007/05/powder-s#> .
+@prefix pto:   <http://www.productontology.org/id/> .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/changement_organisationnel_+_developpement_de_l_organisation_gestion_d_entreprise>
+        a            schema:Thing ;
+        schema:name  "CHANGEMENT ORGANISATIONNEL + DÉVELOPPEMENT DE L'ORGANISATION (GESTION D'ENTREPRISE)" .
+
+<http://dewey.info/class/025.1/e23/>
+        a       schema:Intangible .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lean_production_production>
+        a            schema:Thing ;
+        schema:name  "LEAN PRODUCTION (PRODUCTION)" .
+
+<http://www.worldcat.org/oclc/941116296>
+        a                           schema:CreativeWork , schema:Book ;
+        library:oclcnum             "941116296" ;
+        library:placeOfPublication  <http://id.loc.gov/vocabulary/countries/enk> ;
+        schema:about                <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/changement_organisationnel_+_developpement_de_l_organisation_gestion_d_entreprise> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/administration_des_bibliotheques_bibliotheconomie> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/production_mince_+_production_au_plus_juste_production> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lecture_publique_+_bibliotheconomie_+_bibliotheques> , <http://experiment.worldcat.org/entity/work/data/2265518207#Topic/lean_manufacturing> , <http://experiment.worldcat.org/entity/work/data/2265518207#Topic/organizational_change> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/bibliotheksorganisation_bibliothekswesen> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lean_produktion_+_schlanke_produktion_produktion> , <http://experiment.worldcat.org/entity/work/data/2265518207#Topic/library_administration> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lean_production_production> , <http://experiment.worldcat.org/entity/work/data/2265518207#Topic/organizational_effectiveness> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/library_organization_librarianship> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/bibliothekswesen_+_bibliothekswissenschaften_+_bibliotheken> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/organizational_development_+_organizational_change_business_management> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/organisationsentwicklung_+_organisationsveranderung_unternehmensfuhrung> , <http://dewey.info/class/025.1/e23/> , <http://experiment.worldcat.org/entity/work/data/2265518207#Thing/librarianship_+_library_sciences_+_libraries> ;
+        schema:author               <http://experiment.worldcat.org/entity/work/data/2265518207#Person/nelson_jeremy> ;
+        schema:bookFormat           bgn:PrintBook ;
+        schema:datePublished        "2016" ;
+        schema:exampleOfWork        <http://worldcat.org/entity/work/id/2265518207> ;
+        schema:inLanguage           "en" ;
+        schema:name                 "Becoming a lean library : lessons from the world of technology start-ups" ;
+        schema:productID            "941116296" ;
+        schema:workExample          <http://worldcat.org/isbn/9781843347798> ;
+        wdrs:describedby            <http://www.worldcat.org/title/-/oclc/941116296> .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/librarianship_+_library_sciences_+_libraries>
+        a            schema:Thing ;
+        schema:name  "LIBRARIANSHIP + LIBRARY SCIENCES + LIBRARIES" .
+
+<http://worldcat.org/isbn/9781843347798>
+        a            schema:ProductModel ;
+        schema:isbn  "9781843347798" , "1843347792" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/production_mince_+_production_au_plus_juste_production>
+        a            schema:Thing ;
+        schema:name  "PRODUCTION MINCE + PRODUCTION AU PLUS JUSTE (PRODUCTION)" .
+
+<http://id.loc.gov/vocabulary/countries/enk>
+        a                   schema:Place ;
+        dcterms:identifier  "enk" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/bibliotheksorganisation_bibliothekswesen>
+        a            schema:Thing ;
+        schema:name  "BIBLIOTHEKSORGANISATION (BIBLIOTHEKSWESEN)" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/administration_des_bibliotheques_bibliotheconomie>
+        a            schema:Thing ;
+        schema:name  "ADMINISTRATION DES BIBLIOTHÈQUES (BIBLIOTHÉCONOMIE)" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Topic/organizational_effectiveness>
+        a            schema:Intangible ;
+        schema:name  "Organizational effectiveness" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lecture_publique_+_bibliotheconomie_+_bibliotheques>
+        a            schema:Thing ;
+        schema:name  "LECTURE PUBLIQUE + BIBLIOTHÉCONOMIE + BIBLIOTHÈQUES" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/library_organization_librarianship>
+        a            schema:Thing ;
+        schema:name  "LIBRARY ORGANIZATION (LIBRARIANSHIP)" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Person/nelson_jeremy>
+        a                  schema:Person ;
+        schema:familyName  "Nelson" ;
+        schema:givenName   "Jeremy" ;
+        schema:name        "Jeremy Nelson" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Topic/lean_manufacturing>
+        a            schema:Intangible ;
+        schema:name  "Lean manufacturing" .
+
+<http://www.worldcat.org/title/-/oclc/941116296>
+        a                    genont:ContentTypeGenericResource , genont:InformationResource ;
+        void:inDataset       <http://purl.oclc.org/dataset/WorldCat> ;
+        schema:about         <http://www.worldcat.org/oclc/941116296> ;
+        schema:dateModified  "2018-11-08" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Topic/organizational_change>
+        a            schema:Intangible ;
+        schema:name  "Organizational change" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/organisationsentwicklung_+_organisationsveranderung_unternehmensfuhrung>
+        a            schema:Thing ;
+        schema:name  "ORGANISATIONSENTWICKLUNG + ORGANISATIONSVERÄNDERUNG (UNTERNEHMENSFÜHRUNG)" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Topic/library_administration>
+        a            schema:Intangible ;
+        schema:name  "Library administration" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/organizational_development_+_organizational_change_business_management>
+        a            schema:Thing ;
+        schema:name  "ORGANIZATIONAL DEVELOPMENT + ORGANIZATIONAL CHANGE (BUSINESS MANAGEMENT)" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/bibliothekswesen_+_bibliothekswissenschaften_+_bibliotheken>
+        a            schema:Thing ;
+        schema:name  "BIBLIOTHEKSWESEN + BIBLIOTHEKSWISSENSCHAFTEN + BIBLIOTHEKEN" .
+
+<http://experiment.worldcat.org/entity/work/data/2265518207#Thing/lean_produktion_+_schlanke_produktion_produktion>
+        a            schema:Thing ;
+        schema:name  "LEAN-PRODUKTION + SCHLANKE PRODUKTION (PRODUKTION)" .

@@ -1,0 +1,46 @@
+@prefix schema: <http://schema.org/> .
+@prefix library: <http://purl.org/library/> .
+@prefix genont: <http://www.w3.org/2006/gen/ont#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bgn:   <http://bibliograph.net/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wdrs:  <http://www.w3.org/2007/05/powder-s#> .
+@prefix pto:   <http://www.productontology.org/id/> .
+
+<http://www.worldcat.org/title/-/oclc/1015994917>
+        a                    genont:ContentTypeGenericResource , genont:InformationResource ;
+        void:inDataset       <http://purl.oclc.org/dataset/WorldCat> ;
+        schema:about         <http://www.worldcat.org/oclc/1015994917> ;
+        schema:dateModified  "2019-02-09" .
+
+<http://worldcat.org/isbn/9781783988181>
+        a            schema:ProductModel ;
+        schema:isbn  "9781783988181" , "1783988185" .
+
+<http://experiment.worldcat.org/entity/work/data/4146183540#Person/nelson_jeremy>
+        a                  schema:Person ;
+        schema:familyName  "Nelson" ;
+        schema:givenName   "Jeremy" ;
+        schema:name        "Jeremy Nelson" .
+
+<http://id.loc.gov/vocabulary/countries/fr>
+        a                   schema:Place ;
+        dcterms:identifier  "fr" .
+
+<http://www.worldcat.org/oclc/1015994917>
+        a                           schema:MediaObject , schema:Book , schema:CreativeWork ;
+        library:oclcnum             "1015994917" ;
+        library:placeOfPublication  <http://id.loc.gov/vocabulary/countries/fr> ;
+        schema:bookFormat           schema:EBook ;
+        schema:creator              <http://experiment.worldcat.org/entity/work/data/4146183540#Person/nelson_jeremy> ;
+        schema:datePublished        "2016" ;
+        schema:exampleOfWork        <http://worldcat.org/entity/work/id/4146183540> ;
+        schema:genre                "Ressources Internet"@fr ;
+        schema:inLanguage           "en" ;
+        schema:name                 "Mastering Redis" ;
+        schema:productID            "1015994917" ;
+        schema:url                  <http://international.scholarvox.com/book/88843233> , <http://sbiproxy.uqac.ca/login?url=http://international.scholarvox.com/book/88843233> ;
+        schema:workExample          <http://worldcat.org/isbn/9781783988181> ;
+        wdrs:describedby            <http://www.worldcat.org/title/-/oclc/1015994917> .
