@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff"),
+       url("/assets/fonts/SpaceGrotesk-Regular,woff2") format("woff");
+}
 body {
-  font-family: "Times New Roman";
+  font-family: "Space Grotesk";
 }
