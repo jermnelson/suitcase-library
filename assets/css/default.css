@@ -3,6 +3,18 @@
   src: url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff"),
        url("/assets/fonts/SpaceGrotesk-Regular,woff2") format("woff");
 }
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/assets/fonts/LibreBaskerville-Bold.ttf"),
+       url("/assets/fonts/LibreBaskerville-Italic.ttf"),
+       url("/assets/fonts/LibreBaskerville-Regular.ttf");
+}
+
 body {
+  font-family: "Libre Baskerville";
+}
+
+h1, h2, h3, h4 {
   font-family: "Space Grotesk";
 }
