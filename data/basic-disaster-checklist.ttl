@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://jermnelson.github.io/suitcase-library/d122f9b7-2c83-4662-ac5d-91981de64cee> a schema:ItemList ;
+    schema:description "Based on the https://www.ready.gov/build-a-kit, listing, this Basic Diaster Supplies Kit should be part of the Suitcase Library as a purely practical utility of the this art project."@en ;
+    schema:itemListElement [ a schema:HowToItem ;
+            schema:name "Water"@en ;
+            schema:requiredQuantity [ a schema:QuantitativeValue ;
+                    schema:maxValue 136 ;
+                    schema:minValue 12 ;
+                    schema:unitText "liter"@en ] ] ;
+    schema:name "Basic Disaster Supplies Kit"@en .
+
