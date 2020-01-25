@@ -1,3 +1,5 @@
-# Suitecase Library
-Portable library collection for when a "go bag" is necessary; hopefully
-never to be used in earnest. 
+# Bug Out Library
+Portable library collection for when a "bug out bag (BOB)" is necessary; hopefully
+never to be used in earnest.
+
+
