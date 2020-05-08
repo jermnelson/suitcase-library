@@ -1,0 +1,29 @@
+{
+  "name": "bug-out-library",
+  "version": "0.0.2",
+  "description": "Bug-out Library art project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermnelson/bug-out-library.git"
+  },
+  "keywords": [
+    "library",
+    "bug-out",
+    "art"
+  ],
+  "author": "Jeremy Nelson",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jermnelson/bug-out-library/issues"
+  },
+  "homepage": "https://github.com/jermnelson/bug-out-library#readme",
+  "dependencies": {
+    "gatsby": "^2.21.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
