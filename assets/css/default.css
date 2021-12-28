@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff"),
-       url("/assets/fonts/SpaceGrotesk-Regular,woff2") format("woff");
+  src: url("/static/fonts/SpaceGrotesk-Regular.woff") format("woff"),
+       url("/static/fonts/SpaceGrotesk-Regular,woff2") format("woff");
 }
 
 @font-face {
   font-family: "Libre Baskerville";
-  src: url("/assets/fonts/LibreBaskerville-Bold.ttf"),
-       url("/assets/fonts/LibreBaskerville-Italic.ttf"),
-       url("/assets/fonts/LibreBaskerville-Regular.ttf");
+  src: url("/static/fonts/LibreBaskerville-Bold.ttf"),
+       url("/static/fonts/LibreBaskerville-Italic.ttf"),
+       url("/static/fonts/LibreBaskerville-Regular.ttf");
 }
 
 body {
@@ -21,5 +21,5 @@ h1, h2, h3, h4 {
 
 div.main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }

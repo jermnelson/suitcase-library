@@ -1,0 +1,35 @@
+<div class="window" style="margin: 32px; width: 300px">
+    <div class="title-bar">
+        <div class="title-bar-text">
+        Ask the Head Librarian   
+        </div>
+    </div>
+    <div class="window-body">
+        <div class="field-row-stacked" style="width: 285px">
+            <label for="patron-question">Your question:</label>
+            <textarea id="patron-question" rows="4"></textarea>
+        </div>
+        <div class="field-row">
+            <button onclick="ask_question()">Ask &hellip;</button>
+        </div>
+        <div id="history">
+
+
+        </div>
+    </div>
+</div>
+<script>
+
+    function ask_question() {
+        const question = document.getElementById('patron-question');
+        if (question.value.length < 1) return;
+        const chat_history = document.getElementById('history');
+        const chat_row = document.createElement("div");
+        chat_row.className = "field-row";
+        const chat_content = document.createElement("p");
+        chat_content.innerHTML = `<b>You</b>: ${question.value}`;
+        chat_row.appendChild(chat_content);
+        chat_history.appendChild(chat_row);
+        question.value = '';
+    }
+</script>
