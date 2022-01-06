@@ -20,15 +20,25 @@
 </div>
 <script>
 
-    function ask_question() {
+    async function ask_question() {
         const question = document.getElementById('patron-question');
         if (question.value.length < 1) return;
+        const response = await fetch("/chat/library", { 
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question: question.value })
+        });
+        
         const chat_history = document.getElementById('history');
         const chat_row = document.createElement("div");
         chat_row.className = "field-row";
         const chat_content = document.createElement("p");
         chat_content.innerHTML = `<b>You</b>: ${question.value}`;
         chat_row.appendChild(chat_content);
+        console.log(response)
+        const response_content = document.createElement("p");
+        response_content.innerHTML = `<b>Librarian</b> ${response.json()['response']}`;
+        chat_row.appendChild(response_content);
         chat_history.appendChild(chat_row);
         question.value = '';
     }

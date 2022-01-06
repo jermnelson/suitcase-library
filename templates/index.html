@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="/static/css/win98.css"></link>
   </head>
   <body>
-    <h3 style="float: left;">Suitcase Library {{ branch }}</h3>
+    <h3>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</h3>
     <h1>Welcome to the Library!</h1>
    
     <div class="main">
@@ -25,7 +25,7 @@
            An ongoing art project in creating an "end-of-world" or a "bug out bag" library of 
            conventional and electronic resources, all constrained by the size of medium roller suitcase.
         </p>
-	<img src="assets/img/library-qr-code.png" alt="github repo url qr code" />
+	<img src="/static/img/library-qr-code.png" alt="github repo url qr code" />
         <div class="window" style="margin: 32px; width: 250px">
           <div class="title-bar">
             <div class="title-bar-text">
