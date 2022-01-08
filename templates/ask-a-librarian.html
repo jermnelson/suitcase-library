@@ -20,13 +20,21 @@
 </div>
 <script>
 
-    async function ask_question() {
+    function ask_question() {
         const question = document.getElementById('patron-question');
         if (question.value.length < 1) return;
-        const response = await fetch("/chat/library", { 
+        const response = fetch("/chat/librarian", { 
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ question: question.value })
+        }).then(response => {
+            if (response.ok) {
+                console.log(response)
+            }
+            return response
+        }).then(text => {
+            console.log(text)
+            return text
         });
         
         const chat_history = document.getElementById('history');
@@ -37,7 +45,7 @@
         chat_row.appendChild(chat_content);
         console.log(response)
         const response_content = document.createElement("p");
-        response_content.innerHTML = `<b>Librarian</b> ${response.json()['response']}`;
+        response_content.innerHTML = `<b>Librarian</b> ${response}`;
         chat_row.appendChild(response_content);
         chat_history.appendChild(chat_row);
         question.value = '';
