@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-   <title>Jeremy Nelson's Go Library</title>
+   <title>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</title>
    <link rel="stylesheet" href="/static/css/default.css"></link>
    <link rel="stylesheet" href="/static/css/win98.css"></link>
   </head>
@@ -12,10 +12,7 @@
    
     <div class="main">
       <div>
-      {% include 'library-catalog.html' %}
-      {% include 'ask-a-librarian.html' %}
-      </div>
-      <div>
+        {% include 'library-catalog.html' %}
         <blockquote>
           What happens if we have to recreate our culture and civilization from a portable
           library? What if we were all refugees from some calamity and all we had to bootstrap
@@ -25,7 +22,8 @@
            An ongoing art project in creating an "end-of-world" or a "bug out bag" library of 
            conventional and electronic resources, all constrained by the size of medium roller suitcase.
         </p>
-	<img src="/static/img/library-qr-code.png" alt="github repo url qr code" />
+      </div>
+	<!-- <img src="/static/img/library-qr-code.png" alt="github repo url qr code" />
         <div class="window" style="margin: 32px; width: 250px">
           <div class="title-bar">
             <div class="title-bar-text">
@@ -35,7 +33,10 @@
           <div class="window-body">
             <p>Please</p>
           </div>
-       </div>
+       </div> -->
+       <div>
+        {% include 'ask-a-librarian.html' %}
+        </div>
     </div>
     
    

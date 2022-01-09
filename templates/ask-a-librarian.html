@@ -1,27 +1,42 @@
-<div class="window" style="margin: 32px; width: 300px">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        Ask the Head Librarian   
+<div class="lib_chat">
+    <div>
+        <img src="/static/img/eliza.png" alt="Eliza James, Librarian" style="height: 250px;" />
+        <div id="history">
         </div>
     </div>
-    <div class="window-body">
-        <div class="field-row-stacked" style="width: 285px">
-            <label for="patron-question">Your question:</label>
-            <textarea id="patron-question" rows="4"></textarea>
+    <div>
+        <div class="window" style="margin: 32px; width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                Ask the Head Librarian   
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="field-row-stacked" style="width: 285px">
+                    <label for="patron-question">Your question:</label>
+                    <textarea id="patron-question" rows="4"></textarea>
+                </div>
+                <div class="field-row">
+                    <button onclick="ask_question()">Ask &hellip;</button>
+                </div>
+            </div>
         </div>
-        <div class="field-row">
-            <button onclick="ask_question()">Ask &hellip;</button>
-        </div>
-        <div id="history">
 
-
-        </div>
     </div>
 </div>
 <script>
 
     function ask_question() {
+        const chat_row = document.createElement("div");
         const question = document.getElementById('patron-question');
+        const chat_history = document.getElementById('history');
+        chat_row.className = "field-row";
+        const chat_content = document.createElement("p");
+        chat_content.style.backgroundColor = "gray";
+        chat_content.style.borderRadius = "30px";
+        chat_content.innerHTML = `<strong>You</strong>: ${question.value}`;
+        chat_row.appendChild(chat_content);
+        chat_history.appendChild(chat_row);
         if (question.value.length < 1) return;
         const response = fetch("/chat/librarian", { 
             method: "POST",
@@ -29,25 +44,17 @@
             body: JSON.stringify({ question: question.value })
         }).then(response => {
             if (response.ok) {
-                console.log(response)
+                return response.json()
             }
-            return response
-        }).then(text => {
-            console.log(text)
-            return text
+        }).then(answer => {
+            const answer_row = document.createElement("div");
+            answer_row.className = "field-row";
+            const response_content = document.createElement("p");
+            response_content.innerHTML = `<strong>Librarian:</strong> ${answer.response}`;
+            response_content.style.color = "green";
+            answer_row.appendChild(response_content);
+            chat_history.appendChild(answer_row);
         });
-        
-        const chat_history = document.getElementById('history');
-        const chat_row = document.createElement("div");
-        chat_row.className = "field-row";
-        const chat_content = document.createElement("p");
-        chat_content.innerHTML = `<b>You</b>: ${question.value}`;
-        chat_row.appendChild(chat_content);
-        console.log(response)
-        const response_content = document.createElement("p");
-        response_content.innerHTML = `<b>Librarian</b> ${response}`;
-        chat_row.appendChild(response_content);
-        chat_history.appendChild(chat_row);
         question.value = '';
     }
 </script>

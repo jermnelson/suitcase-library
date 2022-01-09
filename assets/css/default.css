@@ -23,3 +23,8 @@ div.main {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+
+div.lib_chat {
+  display: grid;
+  grid-template-columns: 200px 400px;
+}

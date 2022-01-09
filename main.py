@@ -28,7 +28,15 @@ async def chat(chat_session: ChatSession, person: str):
     response = ""
     match person:
         case "librarian":
-            response = "Thank-you for your question, my name is Ezira"
+            import eliza
+            eliza_james = eliza.Eliza()
+            eliza_james.load("assets/txt/librarian.txt")
+            branch_chat = pathlib.Path(f"assets/txt/{branch}.txt")
+            if branch and branch_chat.exists():
+                eliza_james.load(branch_chat.path)
+            response = eliza_james.respond(chat_session.question)
+            if response is None:
+                response = "Thank-you for your question, my name is Eliza"
         case _:
             response = f"{person} unknown"
     return { "response": response }
