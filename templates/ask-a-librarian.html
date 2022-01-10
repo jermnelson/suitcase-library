@@ -34,6 +34,8 @@
         const chat_content = document.createElement("p");
         chat_content.style.backgroundColor = "gray";
         chat_content.style.borderRadius = "30px";
+        chat_content.style.height = "50px";
+        chat_content.style.alignContent = "center";
         chat_content.innerHTML = `<strong>You</strong>: ${question.value}`;
         chat_row.appendChild(chat_content);
         chat_history.appendChild(chat_row);
