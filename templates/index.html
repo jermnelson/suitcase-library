@@ -7,53 +7,51 @@
    <link rel="stylesheet" href="/static/css/win98.css"></link>
   </head>
   <body>
-    <h3>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</h3>
-    <h1>Welcome to the Library!</h1>
-   
+    <header>
+	<div>
+          {% include 'library-catalog.html' %}
+        </div>
+        <div>
+            <p>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</p>
+            <a href="#" onClick="about()">About</a> | <a href="#">FAQs</a> | <a href="#">Contact</a>
+	</div>
+        <div>
+            <button>Log In / Get a Card</button>
+        </div>
+    </header>
+    <div class="head">
+       <div>
+          <h2>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</h2>
+       </div>
+       <div>
+          Books, Movies, Music. etc.
+       </div>
+       <div>
+          Services &amp; Support
+       </div>
+       <div>
+          Events &amp; Classes
+       </div>
+    </div>
     <div class="main">
       <div>
-        {% include 'library-catalog.html' %}
         <blockquote>
           What happens if we have to recreate our culture and civilization from a portable
           library? What if we were all refugees from some calamity and all we had to bootstrap
           ourselves in a constrained, transportable physical object? What should be in that?
         </blockquote> 
-        <p>
-           An ongoing art project in creating an "end-of-world" or a "bug out bag" library of 
-           conventional and electronic resources, all constrained by the size of medium roller suitcase.
-        </p>
       </div>
-	<!-- <img src="/static/img/library-qr-code.png" alt="github repo url qr code" />
-        <div class="window" style="margin: 32px; width: 250px">
-          <div class="title-bar">
-            <div class="title-bar-text">
-             The next thing
-            </div>
-          </div>
-          <div class="window-body">
-            <p>Please</p>
-          </div>
-       </div> -->
        <div>
         {% include 'ask-a-librarian.html' %}
         </div>
     </div>
-    
-   
-    <div id="access-grid">
-      <div>
-        <img src="/static/img/address_book-0.png" />
-        <img src="/static/img/help_book_cool-0.png" />
-      </div>
-      <div>
-	<img src="/static/img/CardIcon.png" />
-	<img src="/static/img/CardFile.png" />
-      </div>
-      <div>
-	<img src="/static/img/cd_audio_cd_a-0.png" alt="Music" />
-	<img src="/static/img/movie_maker-1.png" alt="Video &amp; Movies" />
-      </div> 
+ </body>
+ <script>
+   function about() {
+     const aboutText = `An ongoing art project in creating an end-of-world" or a "bug out bag" library of conventional and electronic resources, all constrained by the size of medium roller suitcase.`;
+     alert(aboutText);
 
-    </div>
-  </body>
+
+   }
+ </script>
 </html>

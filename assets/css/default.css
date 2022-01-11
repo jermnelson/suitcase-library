@@ -15,8 +15,19 @@ body {
   font-family: "Libre Baskerville";
 }
 
+blockquote {
+  padding: 1em;
+  background-color: #CCE5FF;
+  border: 1px solid black;
+}
+
 h1, h2, h3, h4 {
   font-family: "Space Grotesk";
+}
+
+div.head {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; 
 }
 
 div.main {
@@ -27,4 +38,9 @@ div.main {
 div.lib_chat {
   display: grid;
   grid-template-columns: 200px 400px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
