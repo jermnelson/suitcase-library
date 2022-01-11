@@ -41,6 +41,10 @@ async def chat(chat_session: ChatSession, person: str):
             response = f"{person} unknown"
     return { "response": response }
 
+@app.get("/faq")
+def frequently_asked_questions(request: Request):
+    return templates.TemplateResponse('faq.html', context={ 'request': request, 'branch': branch})
+
 
 @app.get("/")
 def read_root(request: Request):

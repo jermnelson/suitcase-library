@@ -40,7 +40,18 @@ div.lib_chat {
   grid-template-columns: 200px 400px;
 }
 
+dt {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.patron-question {
+  background-color:darksalmon;
+  border-radius: 30px;
+  padding: 1em;
 }
