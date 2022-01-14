@@ -2,28 +2,81 @@
 
 {% block body %}
   <header>
-	  <div>
-      {% include 'library-catalog.html' %}
+    <div>
+      <h2>Suitcase Library</h2> 
+     {% if branch %}<h3>Branch: {{ branch }}</h3>{% endif %}
     </div>
     <div>
       {% include 'top-nav.html' %}
 	  </div>
     <div>
-      <button>Log In / Get a Card</button>
-    </div>
+      {% include 'login-card.html' %}
+     </div>
     </header>
     <div class="head">
        <div>
-          <h2>Suitcase Library {% if branch %}Branch: {{ branch }}{% endif %}</h2>
+         {% include 'library-catalog.html' %}
        </div>
        <div>
-          Books, Movies, Music. etc.
+         <div class="window" style="width: 250px">
+           <div class="title-bar">
+             <div class="title-bar-text">
+               Collections
+             </div>
+	   </div>
+	   <div class="window-body">
+            <button>
+              <img src="/static/img/address_book-0.png" alt="Book"/><br/>
+              Books
+            </button>
+	    <button>
+              <img src="/static/img/movie_maker-1.png" alt="Video &amp; Movies" /><br/>
+               Video 
+            </button>
+            <button>
+             <img src="/static/img/cd_audio_cd_a-0.png" alt="Music" /><br/>
+               Music
+            </button>
+           </div>
+         </div>
        </div>
        <div>
-          Services &amp; Support
+         <div class="window" style="width: 250px">
+           <div class="title-bar">
+	      <div class="title-bar-text">Services &amp; Support</div>
+	   </div>
+           <div class="window-body">
+              <button>
+                <img src="/static/img/chat.png" alt="Chat" /><br/>
+                Chat
+              </button>
+              <button>
+                <img src="/static/img/mailbox_world.png" alt="Email Reference" /><br/>
+                 E-mail
+              </button>
+              <button>
+               <img src="/static/img/help_book_cool-0.png" /><br/>
+                Help
+             </button>            
+           </div>
+         </div>
        </div>
        <div>
-          Events &amp; Classes
+         <div class="window" style="width: 250px">
+           <div class="title-bar">
+	      <div class="title-bar-text">Events &amp; Classes</div>
+	   </div>
+           <div class="window-body">
+              <button>
+                <img src="/static/img/calendar-2.png" alt="Events" /><br/>
+                Events
+              </button>
+              <button>
+                <img src="/static/img/art-classes.png" alt="Classes" /><br/>
+                 Classes
+              </button>
+           </div>
+         </div>
        </div>
     </div>
     <div class="main">
@@ -37,6 +90,11 @@
        <div>
         {% include 'ask-a-librarian.html' %}
         </div>
+    </div>
+    <div class="window">
+      <div class="window-body">
+        Suitcase Library
+      </div>
     </div>
  </body>
  {% endblock %}
