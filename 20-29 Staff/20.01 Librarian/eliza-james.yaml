@@ -1,0 +1,16 @@
+character:
+  name: "Eliza James"
+  pronouns:
+    - "her"
+    - "she"
+  class:
+    - "librarian"
+    - "community healer"
+  race: 
+    - "human"
+  alignment:
+    - "Altruistic"
+    - "Lawful"
+  experience_points: 0
+
+

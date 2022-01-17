@@ -1,0 +1,14 @@
+character:
+  name: "Dun"
+  pronouns:
+    - "they"
+    - "them"
+  class:
+    - "cataloger"
+    - "instersectional paladin"
+  race:
+    - "gold dragon"
+  alignment:
+    - "Individualistic"
+    - "Lawful"
+  experience_points: 0

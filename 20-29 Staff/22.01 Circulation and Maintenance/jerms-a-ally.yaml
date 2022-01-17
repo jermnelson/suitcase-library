@@ -1,0 +1,15 @@
+character:
+  name: "Jerms A. Ally"
+  pronouns:
+    - "he"
+    - "his"
+    - "him"
+  class:
+    - "shelving clerk"
+    - "academic wizard"
+  race: 
+    - "human"
+  alignment:
+    - "Altrustic"
+    - "Chaotic"
+  experience_points: 0

@@ -1,0 +1,14 @@
+character:
+  name: "Kumo"
+  pronouns:
+    - "she"
+    - "her"
+  class:
+    - "system adminstrator"
+    - "rogue worker"
+  race:
+    - "planer spider"
+  alignment:
+    - "Chaotic"
+    - "Individualistic"
+  experience_points: 0
