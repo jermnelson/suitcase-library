@@ -41,6 +41,20 @@ async def chat(chat_session: ChatSession, person: str):
             response = f"{person} unknown"
     return { "response": response }
 
+@app.get("/browse/{collection}")
+def collection(request: Request, collection: str):
+    context = { 'request': request, 'branch': branch}
+    match collection:
+        case "books":
+            return templates.TemplateResponse('books.html', context=context)
+        case "music":
+            return templates.TemplateResponse('music.html', context=context)
+        case "video":
+            return templates.TemplateResponse('video.html', context=context)
+        case _:
+            return templates.TemplateResponse('collections.html', context=context)
+
+
 @app.get("/faq")
 def frequently_asked_questions(request: Request):
     return templates.TemplateResponse('faq.html', context={ 'request': request, 'branch': branch})

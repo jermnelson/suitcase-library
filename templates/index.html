@@ -25,15 +25,15 @@
              </div>
 	   </div>
 	   <div class="window-body">
-            <button>
+            <button onclick="browse('books')">
               <img src="/static/img/address_book-0.png" alt="Book"/><br/>
               Books
             </button>
-	    <button>
+	          <button onclick="browse('video')">
               <img src="/static/img/movie_maker-1.png" alt="Video &amp; Movies" /><br/>
                Video 
             </button>
-            <button>
+            <button onclick="browse('music')">
              <img src="/static/img/cd_audio_cd_a-0.png" alt="Music" /><br/>
                Music
             </button>
@@ -99,5 +99,8 @@
  </body>
  {% endblock %}
  {% block script %}
+  function browse(collection) {
+    window.location = `/browse/${collection}`
 
+  }
  {% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<header>
+	<div>
+        {% include 'library-catalog.html' %}
+    </div>
+    <div>
+        {% include 'top-nav.html' %}
+    </div>
+</header>
+<h1>Browse Videos</h1>
+<div class="main">
+    <div>
+        <h3>Movies</h3>
+    </div>
+    <div>
+        <h2>News</h2>
+        <h3>How-to</h3>
+    </div>
+</div>
+{% endblock %}
