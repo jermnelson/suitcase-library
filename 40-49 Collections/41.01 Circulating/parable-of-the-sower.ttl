@@ -1,0 +1,359 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a bf:GenreForm ;
+    rdfs:label "fiction" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026529> a bf:GenreForm,
+        madsrdf:Topic ;
+    rdfs:label "Science fiction." ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    madsrdf:authoritativeLabel "Science fiction." .
+
+<http://id.loc.gov/authorities/subjects/sh2007100196> a bf:Topic,
+        madsrdf:ComplexSubject ;
+    rdfs:label "African Americans--Fiction." ;
+    bflc:aap-normalized "africanamericansfiction" ;
+    madsrdf:authoritativeLabel "African Americans--Fiction." ;
+    madsrdf:componentList ( [ a madsrdf:Topic ;
+                madsrdf:authoritativeLabel "African Americans" ] [ a madsrdf:GenreForm ;
+                madsrdf:authoritativeLabel "Fiction" ] ) ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh2008101979> a bf:Place,
+        madsrdf:ComplexSubject ;
+    rdfs:label "California, Southern--Fiction." ;
+    bflc:aap-normalized "californiasouthernfiction" ;
+    madsrdf:authoritativeLabel "California, Southern--Fiction." ;
+    madsrdf:componentList ( [ a madsrdf:Geographic ;
+                madsrdf:authoritativeLabel "California, Southern" ] [ a madsrdf:GenreForm ;
+                madsrdf:authoritativeLabel "Fiction" ] ) ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh85001932> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "African Americans." ;
+    bflc:aap-normalized "africanamericans" ;
+    madsrdf:authoritativeLabel "African Americans." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects/sh85018898> a bf:Place,
+        madsrdf:Geographic ;
+    rdfs:label "Southern California." ;
+    bflc:aap-normalized "southerncalifornia" ;
+    madsrdf:authoritativeLabel "Southern California." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/authorities/subjects/sh85040350> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Dystopias." ;
+    bflc:aap-normalized "dystopias" ;
+    madsrdf:authoritativeLabel "Dystopias." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://id.loc.gov/entities/agents/102b793dc19c1d38eab489f379843278> a bf:Agent ;
+    rdfs:label "Grand Central Publishing" ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/entities/providers/102b793dc19c1d38eab489f379843278> .
+
+<http://id.loc.gov/resources/hubs/29876461-f99c-30b7-197c-8c2adcfb6bf6> a bf:Work ;
+    bflc:aap "Butler, Octavia E., Parable of the sower" .
+
+<http://id.loc.gov/resources/instances/21223749> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Parable of the sower" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "XYZ" ] ;
+            bf:changeDate "2019-10-10T15:16:34"^^xsd:dateTime ;
+            bf:creationDate "2019-10-01"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T19:42:11-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "21223749" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a Acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $b xk15 2019-10-01 z-processor $i xk15 2019-10-04 (telework) to BCCD" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:copyrightDate "1993"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "21 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 345 pages" ] ;
+    bf:hasItem <http://id.loc.gov/resources/items/21223749-050-15> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "trade paperback reissue" ;
+            rdf:value "1538732181" ],
+        [ a bf:Lccn ;
+            rdf:value "  2019457271" ],
+        [ a bf:Isbn ;
+            bf:qualifier "trade paperback reissue" ;
+            rdf:value "9781538732182" ],
+        [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            rdf:value "on1097664792" ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/21223749> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes reading group guide." ],
+        [ a bf:Note ;
+            rdfs:label "\"With a new foreword from award-winning author N.K. Jemison\"--Cover." ],
+        [ a bf:Note ;
+            rdfs:label "First Grand Central Publishing edition, 2000 ; reissued 2019. Original copyright, ©1993." ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2019"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent <http://id.loc.gov/entities/agents/102b793dc19c1d38eab489f379843278> ;
+            bf:date "2019" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ] ;
+    bf:provisionActivityStatement "New York : Grand Central Publishing, 2019." ;
+    bf:responsibilityStatement "Octavia E. Butler" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Parable of the sower" ;
+            bf:mainTitle "Parable of the sower" ],
+        [ a bf:Title ;
+            rdfs:label "Parable of the sower" ;
+            bf:mainTitle "Parable of the sower" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
+<http://id.loc.gov/resources/items/21223749-050-15> a bf:Item ;
+    bf:shelfMark [ a bf:ShelfMarkLcc ;
+            rdfs:label "PS3552.U827 P37 2019" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<http://id.loc.gov/rwo/agents/n2009004580> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Jemisin, N. K.," ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n2009004580> .
+
+<http://id.loc.gov/rwo/agents/n79056654> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Butler, Octavia E.," ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79056654> .
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier ;
+    rdfs:label "volume" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
+    rdfs:label "text" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> .
+
+<http://id.loc.gov/vocabulary/countries/nyu> a bf:Place ;
+    rdfs:label "New York (State)" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source .
+
+<http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> a bf:GeographicCoverage ;
+    rdfs:label "California" .
+
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance ;
+    rdfs:label "monograph" .
+
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media ;
+    rdfs:label "unmediated" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> .
+
+<http://id.loc.gov/vocabulary/organizations/ocolc> a bf:Agent .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    rdfs:label "author." .
+
+<http://id.loc.gov/resources/works/21223749> a bf:Text,
+        bf:Work ;
+    rdfs:label "Parable of the sower" ;
+    bflc:aap "Butler, Octavia E., Parable of the sower" ;
+    bflc:aap-normalized "butleroctaviaeparableofthesower" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "XYZ" ] ;
+            bf:changeDate "2019-10-10T15:16:34"^^xsd:dateTime ;
+            bf:creationDate "2019-10-01"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T19:42:11-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "21223749" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a Acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $b xk15 2019-10-01 z-processor $i xk15 2019-10-04 (telework) to BCCD" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "PS3552.U827" ;
+            bf:itemPortion "P37 2019" ],
+        [ a bf:ClassificationDdc ;
+            bf:classificationPortion "813/.54" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79056654> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2009004580> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword." ] ] ;
+    bf:expressionOf <http://id.loc.gov/resources/hubs/29876461-f99c-30b7-197c-8c2adcfb6bf6> ;
+    bf:genreForm [ a bf:GenreForm,
+                madsrdf:Topic ;
+            rdfs:label "Dystopias." ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/gsafd> ;
+            madsrdf:authoritativeLabel "Dystopias." ],
+        [ a bf:GenreForm,
+                madsrdf:Topic ;
+            rdfs:label "Science fiction." ;
+            bf:identifiedBy [ a bf:Identifier ;
+                    bf:source [ a bf:Source ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01726489" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/fast> ;
+            madsrdf:authoritativeLabel "Science fiction." ],
+        [ a bf:GenreForm,
+                madsrdf:Topic ;
+            rdfs:label "Fiction." ;
+            bf:identifiedBy [ a bf:Identifier ;
+                    bf:source [ a bf:Source ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01423787" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/fast> ;
+            madsrdf:authoritativeLabel "Fiction." ],
+        [ a bf:GenreForm,
+                madsrdf:Topic ;
+            rdfs:label "Science fiction." ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/gsafd> ;
+            madsrdf:authoritativeLabel "Science fiction." ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026529> ;
+    bf:geographicCoverage <http://id.loc.gov/vocabulary/geographicAreas/n-us-ca> ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/21223749> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:otherEdition [ a bf:Work ;
+            bflc:aap "Butler, Octavia E" ;
+            bflc:aap-normalized "butleroctaviae" ;
+            bflc:relationship [ a bflc:Relationship ;
+                    bflc:relation [ a bflc:Relation ;
+                            rdfs:label "Reproduction of (manifestation)" ] ;
+                    bf:relatedTo <http://id.loc.gov/resources/works/21223749> ] ;
+            bf:contribution [ a bflc:PrimaryContribution ;
+                    bf:agent [ a bf:Agent ;
+                            rdfs:label "Butler, Octavia E." ] ] ;
+            bf:hasInstance [ a bf:Instance ;
+                    bf:identifiedBy [ a bf:Lccn ;
+                            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                            rdf:value "   93008703" ] ;
+                    bf:provisionActivityStatement "New York : Four Walls Eight Windows, 1993" ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Parable of the sower" ] ] ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "FICTION--African American--Women." ;
+            bflc:aap-normalized "fictionafricanamericanwomen" ;
+            madsrdf:authoritativeLabel "FICTION--African American--Women." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "FICTION" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "African American" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Women" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "FICTION--Dystopian." ;
+            bflc:aap-normalized "fictiondystopian" ;
+            madsrdf:authoritativeLabel "FICTION--Dystopian." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "FICTION" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Dystopian" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "FICTION--Science Fiction--Apocalyptic & Post-Apocalyptic." ;
+            bflc:aap-normalized "fictionsciencefictionapocalyptic&postapocalyptic" ;
+            madsrdf:authoritativeLabel "FICTION--Science Fiction--Apocalyptic & Post-Apocalyptic." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "FICTION" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Science Fiction" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Apocalyptic & Post-Apocalyptic" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Dystopias--Fiction." ;
+            bflc:aap-normalized "dystopiasfiction" ;
+            madsrdf:authoritativeLabel "Dystopias--Fiction." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Dystopias" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Fiction" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        <http://id.loc.gov/authorities/subjects/sh2007100196>,
+        <http://id.loc.gov/authorities/subjects/sh2008101979>,
+        <http://id.loc.gov/authorities/subjects/sh85001932>,
+        <http://id.loc.gov/authorities/subjects/sh85018898>,
+        <http://id.loc.gov/authorities/subjects/sh85040350> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"In 2025 California, an eighteen-year-old African American woman, suffering from a hereditary trait that causes her to feel others' pain as well as her own, flees northward from her small community and its desperate savages.\" -- (Source of summary not specified)" ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Parable of the sower" ;
+            bf:mainTitle "Parable of the sower" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    rdf:value "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/fast> a bf:Source ;
+    bf:code "fast" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/gsafd> a bf:Source ;
+    bf:code "gsafd" .
+
+<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
+    bf:code "lccopycat" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "corrected or revised" ;
+    bf:code "c" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    bf:code "DLC" .
+
