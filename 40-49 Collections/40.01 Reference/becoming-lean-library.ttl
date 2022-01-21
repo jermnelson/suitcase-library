@@ -95,6 +95,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     bf:contribution [ a bflc:PrimaryContribution, bf:contribution ;
       bf:agent <https://orcid.org/0000-0002-7543-3893> 
     ];
@@ -107,6 +108,11 @@
 >>>>>>> 5717e73 (Books and images)
 =======
 >>>>>>> ea7ab2c (Reference and Circulating Collection)
+=======
+    bf:contribution [ a bflc:PrimaryContribution, bf:contribution ;
+      bf:agent <https://orcid.org/0000-0002-7543-3893> 
+    ];
+>>>>>>> 044292c (Books and images)
     bf:hasInstance <http://id.loc.gov/resources/instances/18723499> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:title [ a bf:Title ;
