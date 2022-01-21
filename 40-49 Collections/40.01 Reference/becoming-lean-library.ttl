@@ -92,6 +92,9 @@
             lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default" ;
             lclocal:d955 "=955     $a pc27 2015-07-30" ] ;
     bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution, bf:contribution ;
+      bf:agent <https://orcid.org/0000-0002-7543-3893> 
+    ];
     bf:hasInstance <http://id.loc.gov/resources/instances/18723499> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:title [ a bf:Title ;
@@ -145,3 +148,5 @@
 <http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
     bf:code "DLC" .
 
+<https://orcid.org/0000-0002-7543-3893> a bf:Agent, bf:Person ;
+    rdfs:label "Jeremy Nelson" .
