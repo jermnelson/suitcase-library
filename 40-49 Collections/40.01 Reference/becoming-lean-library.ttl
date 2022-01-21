@@ -93,11 +93,17 @@
             lclocal:d955 "=955     $a pc27 2015-07-30" ] ;
     bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
 <<<<<<< HEAD
+<<<<<<< HEAD
     bf:contribution [ a bflc:PrimaryContribution, bf:contribution ;
       bf:agent <https://orcid.org/0000-0002-7543-3893> 
     ];
 =======
 >>>>>>> 02925b2 (Reference and Circulating Collection)
+=======
+    bf:contribution [ a bflc:PrimaryContribution, bf:contribution ;
+      bf:agent <https://orcid.org/0000-0002-7543-3893> 
+    ];
+>>>>>>> 5717e73 (Books and images)
     bf:hasInstance <http://id.loc.gov/resources/instances/18723499> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:title [ a bf:Title ;
