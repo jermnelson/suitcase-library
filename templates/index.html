@@ -18,10 +18,10 @@
          {% include 'library-catalog.html' %}
        </div>
        <div>
-         <div class="window" style="width: 250px">
+         <div class="window" style="width: 800px;">
            <div class="title-bar">
              <div class="title-bar-text">
-               Collections
+               Collections, Services, &amp; Classes
              </div>
 	   </div>
 	   <div class="window-body">
@@ -37,15 +37,6 @@
              <img src="/static/img/cd_audio_cd_a-0.png" alt="Music" /><br/>
                Music
             </button>
-           </div>
-         </div>
-       </div>
-       <div>
-         <div class="window" style="width: 250px">
-           <div class="title-bar">
-	      <div class="title-bar-text">Services &amp; Support</div>
-	   </div>
-           <div class="window-body">
               <button>
                 <img src="/static/img/chat.png" alt="Chat" /><br/>
                 Chat
@@ -58,15 +49,6 @@
                <img src="/static/img/help_book_cool-0.png" /><br/>
                 Help
              </button>            
-           </div>
-         </div>
-       </div>
-       <div>
-         <div class="window" style="width: 250px">
-           <div class="title-bar">
-	      <div class="title-bar-text">Events &amp; Classes</div>
-	   </div>
-           <div class="window-body">
               <button>
                 <img src="/static/img/calendar-2.png" alt="Events" /><br/>
                 Events
@@ -88,6 +70,9 @@
         </blockquote> 
       </div>
        <div>
+        {% if branch %}
+          <img src="/static/img/{{ branch }}_front.png" alt="Books" />
+       {% endif %}
         {% include 'ask-a-librarian.html' %}
         </div>
     </div>

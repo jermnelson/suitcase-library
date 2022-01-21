@@ -6,10 +6,14 @@ import pathlib
 
 from typing import Optional
 
+import rdflib
+
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
+
+from queries import BOOKS
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="assets"), name="static")
@@ -18,13 +22,20 @@ branch = os.getenv("BRANCH")
 
 templates = Jinja2Templates(directory="templates/")
 
+def collection_graph():
+    collections = rdflib.Graph()
+    for path in pathlib.Path("40-49 Collections/").glob("**/*.ttl"):
+        collections.parse(path, format='turtle')
+    return collections
+
+collections = collection_graph()
+
 class ChatSession(BaseModel):
     question: str
 
 
 @app.post("/chat/{person}")
 async def chat(chat_session: ChatSession, person: str):
-    print(chat_session)
     response = ""
     match person:
         case "librarian":
@@ -46,6 +57,14 @@ def collection(request: Request, collection: str):
     context = { 'request': request, 'branch': branch}
     match collection:
         case "books":
+            books = {}
+            for row in collections.query(BOOKS):
+                uri = str(row[0])
+                if str(row[0]) in books:
+                    books[uri]['authors'].append(str(row[2]))
+                else:
+                    books[uri] = {'title': str(row[1]), 'authors': [str(row[2])]}
+            context['books'] = books
             return templates.TemplateResponse('books.html', context=context)
         case "music":
             return templates.TemplateResponse('music.html', context=context)

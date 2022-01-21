@@ -9,5 +9,19 @@
         {% include 'top-nav.html' %}
     </div>
 </header>
-<h1>Browse Books</h1>
+<h2>Browse Books</h2>
+<div class="main">
+    <div>
+        <ul>
+        {% for uri, row in books.items() %}
+            <li><em>{{ row.title }}</em> by {{ ",".join(row.authors) }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div>
+        {% if branch %}
+         <img src="/static/img/{{ branch }}_inside.png" alt="Books" />
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
