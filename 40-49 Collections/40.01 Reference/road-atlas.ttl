@@ -1,0 +1,255 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026058> a bf:GenreForm,
+        madsrdf:Topic ;
+    rdfs:label "Atlases.",
+        "atlases" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    madsrdf:authoritativeLabel "Atlases." .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026536> a bf:GenreForm,
+        madsrdf:Topic ;
+    rdfs:label "Road maps." ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    madsrdf:authoritativeLabel "Road maps." .
+
+<http://id.loc.gov/resources/instances/22106252> a bf:Instance ;
+    rdfs:label "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2021-07-27T10:21:00"^^xsd:dateTime ;
+            bf:creationDate "2021-06-29"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-09T18:42:29.102926-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "22106252" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 20 $g y-geogmaps" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default" ;
+            lclocal:d955 "=955     $i ga36 2021-06-29 $w xm08 2021-07-27 TW situational" ] ;
+    bf:baseMaterial <http://id.loc.gov/vocabulary/mmaterial/pap> ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:copyrightDate "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "28 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 atlas (xv, 82 pages)" ] ;
+    bf:hasItem <http://id.loc.gov/resources/items/22106252-050-14> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9780528022456" ],
+        [ a bf:Isbn ;
+            rdf:value "0528022458" ],
+        [ a bf:Lccn ;
+            rdf:value "  2021589122" ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/22106252> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from cover." ],
+        [ a [ rdfs:resource "http://id.loc.gov/vocabulary/mnotetype/physical" ],
+                bf:Note ;
+            rdfs:label "color illustrations, color maps" ],
+        [ a bf:Note ;
+            rdfs:label "Includes indexes, text, mileage chart, and distance map." ],
+        [ a bf:Note ;
+            rdfs:label "\"©2020 RM Acquisition, LLC d/b/a Rand McNally.\"" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Rand McNally and Company" ] ;
+            bf:date "2020" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Chicago, Illinois" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2020"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/ilu> ] ;
+    bf:provisionActivityStatement "Chicago, Illinois : Rand McNally and Company, [2020]" ;
+    bf:responsibilityStatement "Rand McNally" ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Rand McNally road atlas midsize, 2021" ;
+            bf:mainTitle "Rand McNally road atlas midsize, 2021" ],
+        [ a bf:Title ;
+            rdfs:label "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+            bf:mainTitle "Road atlas, 2021" ;
+            bf:subtitle "midsize : America's # 1 road atlas : United States, Canada, Mexico" ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Rand McNally road atlas midsize, 2021" ;
+            bf:mainTitle "Rand McNally road atlas midsize, 2021" ],
+        [ a bf:Title ;
+            rdfs:label "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+            bf:mainTitle "Road atlas, 2021" ;
+            bf:subtitle "midsize : America's # 1 road atlas : United States, Canada, Mexico" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
+<http://id.loc.gov/resources/items/22106252-050-14> a bf:Item ;
+    bf:shelfMark [ a bf:ShelfMarkLcc ;
+            rdfs:label "G1201.P2 R37 2020" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<http://id.loc.gov/resources/works/22106252> a bf:Cartography,
+        bf:Work ;
+    rdfs:label "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+    bflc:aap "Rand McNally and Company, Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+    bflc:aap-normalized "randmcnallyandcompanyroadatlas2021:midsize:america's#1roadatlas:unitedstatescanadamexico" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2021-07-27T10:21:00"^^xsd:dateTime ;
+            bf:creationDate "2021-06-29"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-09T18:42:29.102926-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "22106252" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 20 $g y-geogmaps" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default" ;
+            lclocal:d955 "=955     $i ga36 2021-06-29 $w xm08 2021-07-27 TW situational" ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "912.7" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "G1201.P2" ;
+            bf:itemPortion "R37 2020" ] ;
+    bf:colorContent <http://id.loc.gov/vocabulary/mcolor/mul> ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/cri> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79150315> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026058>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026536> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            rdfs:label "4411" ;
+            bf:source <http://id.loc.gov/authorities/classification/G> ],
+        [ a bf:GeographicCoverage ;
+            rdfs:label "3401" ;
+            bf:source <http://id.loc.gov/authorities/classification/G> ],
+        [ a bf:GeographicCoverage ;
+            rdfs:label "3701" ;
+            bf:source <http://id.loc.gov/authorities/classification/G> ] ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/22106252> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scales differ" ],
+        [ a bf:Scale ;
+            rdfs:label "linear scale" ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Roads--Canada--Maps." ;
+            bflc:aap-normalized "roadscanadamaps" ;
+            madsrdf:authoritativeLabel "Roads--Canada--Maps." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Roads" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Canada" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Maps" ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Roads--Mexico--Maps." ;
+            bflc:aap-normalized "roadsmexicomaps" ;
+            madsrdf:authoritativeLabel "Roads--Mexico--Maps." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Roads" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Mexico" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Maps" ] ) ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Roads--United States--Maps." ;
+            bflc:aap-normalized "roadsunitedstatesmaps" ;
+            madsrdf:authoritativeLabel "Roads--United States--Maps." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Roads" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "United States" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Maps" ] ) ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ;
+            bf:mainTitle "Road atlas, 2021 : midsize : America's # 1 road atlas : United States, Canada, Mexico" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/rwo/agents/n79150315> a bf:Agent,
+        bf:Organization ;
+    rdfs:label "Rand McNally and Company," ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79150315> .
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier ;
+    rdfs:label "volume" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> .
+
+<http://id.loc.gov/vocabulary/contentTypes/cri> a bf:Content ;
+    rdfs:label "cartographic image" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> .
+
+<http://id.loc.gov/vocabulary/countries/ilu> a bf:Place ;
+    rdfs:label "Illinois" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a bf:Source .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> a bf:Source .
+
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance ;
+    rdfs:label "monograph" .
+
+<http://id.loc.gov/vocabulary/mcolor/mul> a bf:ColorContent ;
+    rdfs:label "color" .
+
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media ;
+    rdfs:label "unmediated" ;
+    bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia> .
+
+<http://id.loc.gov/vocabulary/mmaterial/pap> a bf:BaseMaterial ;
+    rdfs:label "paper" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index" .
+
+<http://id.loc.gov/vocabulary/relators/ctg> a bf:Role ;
+    rdfs:label "cartographer." .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    rdf:value "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a bf:Source ;
+    bf:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "corrected or revised" ;
+    bf:code "c" .
+
+<http://id.loc.gov/authorities/classification/G> a bf:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    bf:code "DLC" .
+

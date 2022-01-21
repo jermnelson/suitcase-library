@@ -1,0 +1,247 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/subjects/sh85008180> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Artificial intelligence." ;
+    bflc:aap-normalized "artificialintelligence" ;
+    madsrdf:authoritativeLabel "Artificial intelligence." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh85084269> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Metamathematics." ;
+    bflc:aap-normalized "metamathematics" ;
+    madsrdf:authoritativeLabel "Metamathematics." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh85131440> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Symmetry." ;
+    bflc:aap-normalized "symmetry" ;
+    madsrdf:authoritativeLabel "Symmetry." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/entities/agents/4657c4ce07e9a56c07559538097b54a4> a bf:Agent ;
+    rdfs:label "Basic Books" ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/entities/providers/4657c4ce07e9a56c07559538097b54a4> .
+
+<http://id.loc.gov/resources/instances/1688283> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Gödel, Escher, Bach : an eternal golden braid" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2016-11-17T12:54:51"^^xsd:dateTime ;
+            bf:creationDate "1999-04-02"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T20:19:23-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "1688283" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d 2 $e ncip $f 19 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default",
+                "=925  1  $a acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $a pb07 04-02-99 to Cat.; jp99 04-07-99; jp00 04-06-99; jp00 04-06-99; jp00 04-06-99;jp85 04-15-99; copy 2 added pv00 02-14-01 to BCCD" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:dimensions "23 cm." ;
+    bf:editionStatement "20th anniversary ed" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "23, vi-xxi, 777 p." ] ;
+    bf:hasItem <http://id.loc.gov/resources/items/1688283-050-14> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            bf:qualifier "cover" ;
+            rdf:value "0465026567" ],
+        [ a bf:Isbn ;
+            bf:qualifier "pbk." ;
+            rdf:value "0394756827" ],
+        [ a bf:Lccn ;
+            rdf:value "   99192374 " ],
+        [ a bf:Lccn ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/cancinv> ;
+            rdf:value "   99228026 " ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/1688283> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:note [ a [ rdfs:resource "http://id.loc.gov/vocabulary/mnotetype/physical" ],
+                bf:Note ;
+            rdfs:label "ill." ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1999"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent <http://id.loc.gov/entities/agents/4657c4ce07e9a56c07559538097b54a4> ;
+            bf:date "c1999" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ] ;
+    bf:provisionActivityStatement "New York : Basic Books, c1999." ;
+    bf:responsibilityStatement "Douglas R. Hofstadter" ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Contributor biographical information" ] ;
+            rdf:value "http://www.loc.gov/catdir/enhancements/fy0830/99192374-b.html"^^xsd:anyURI ],
+        [ a bf:SupplementaryContent ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Publisher description" ] ;
+            rdf:value "http://www.loc.gov/catdir/description/random044/99192374.html"^^xsd:anyURI ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Gödel, Escher, Bach : an eternal golden braid" ;
+            bf:mainTitle "Gödel, Escher, Bach" ;
+            bf:subtitle "an eternal golden braid" ],
+        [ a bf:Title ;
+            rdfs:label "Gödel, Escher, Bach : an eternal golden braid" ;
+            bf:mainTitle "Gödel, Escher, Bach" ;
+            bf:subtitle "an eternal golden braid" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
+<http://id.loc.gov/resources/items/1688283-050-14> a bf:Item ;
+    bf:shelfMark [ a bf:ShelfMarkLcc ;
+            rdfs:label "QA9.8.H63 1999" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<http://id.loc.gov/resources/works/1688283> a bf:Text,
+        bf:Work ;
+    rdfs:label "Gödel, Escher, Bach : an eternal golden braid" ;
+    bflc:aap "Hofstadter, Douglas R., 1945- Gödel, Escher, Bach : an eternal golden braid" ;
+    bflc:aap-normalized "hofstadterdouglasr1945gödelescherbach:aneternalgoldenbraid" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2016-11-17T12:54:51"^^xsd:dateTime ;
+            bf:creationDate "1999-04-02"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T20:19:23-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "1688283" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d 2 $e ncip $f 19 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default",
+                "=925  1  $a acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $a pb07 04-02-99 to Cat.; jp99 04-07-99; jp00 04-06-99; jp00 04-06-99; jp00 04-06-99;jp85 04-15-99; copy 2 added pv00 02-14-01 to BCCD" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "QA9.8" ;
+            bf:itemPortion ".H63 1999" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "510/.1" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "21" ] ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79001579> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/1688283> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85008180>,
+        <http://id.loc.gov/authorities/subjects/sh85084269>,
+        <http://id.loc.gov/authorities/subjects/sh85131440>,
+        <http://id.loc.gov/rwo/agents/n79007761>,
+        <http://id.loc.gov/rwo/agents/n79007770>,
+        <http://id.loc.gov/rwo/agents/n79021425> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references (p. 746-756) and index." ],
+        <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Gödel, Escher, Bach : an eternal golden braid" ;
+            bf:mainTitle "Gödel, Escher, Bach : an eternal golden braid" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/rwo/agents/n79001579> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Hofstadter, Douglas R., 1945-" ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79001579> .
+
+<http://id.loc.gov/rwo/agents/n79007761> a bf:Agent,
+        bf:Person,
+        madsrdf:PersonalName ;
+    rdfs:label "Escher, M. C. (Maurits Cornelis), 1898-1972." ;
+    bflc:aap-normalized "eschermc(mauritscornelis)18981972" ;
+    madsrdf:authoritativeLabel "Escher, M. C. (Maurits Cornelis), 1898-1972." ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79007761> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/rwo/agents/n79007770> a bf:Agent,
+        bf:Person,
+        madsrdf:PersonalName ;
+    rdfs:label "Gödel, Kurt." ;
+    bflc:aap-normalized "gödelkurt" ;
+    madsrdf:authoritativeLabel "Gödel, Kurt." ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79007770> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/rwo/agents/n79021425> a bf:Agent,
+        bf:Person,
+        madsrdf:PersonalName ;
+    rdfs:label "Bach, Johann Sebastian, 1685-1750." ;
+    bflc:aap-normalized "bachjohannsebastian16851750" ;
+    madsrdf:authoritativeLabel "Bach, Johann Sebastian, 1685-1750." ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n79021425> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier ;
+    rdfs:label "volume" .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
+    rdfs:label "text" .
+
+<http://id.loc.gov/vocabulary/countries/nyu> a bf:Place ;
+    rdfs:label "New York (State)" .
+
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance ;
+    rdfs:label "monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media ;
+    rdfs:label "unmediated" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations" .
+
+<http://id.loc.gov/vocabulary/mstatus/cancinv> a bf:Status ;
+    rdfs:label "invalid" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index" .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role ;
+    rdfs:label "Contributor" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "aacr" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "corrected or revised" ;
+    bf:code "c" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    bf:code "DLC" .
+

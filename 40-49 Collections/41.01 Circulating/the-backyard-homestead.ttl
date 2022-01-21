@@ -1,0 +1,209 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/subjects/sh85050212> a bf:Topic,
+        madsrdf:ComplexSubject ;
+    rdfs:label "Food--Preservation." ;
+    bflc:aap-normalized "foodpreservation" ;
+    madsrdf:authoritativeLabel "Food--Preservation." ;
+    madsrdf:componentList ( [ a madsrdf:Topic ;
+                madsrdf:authoritativeLabel "Food" ] [ a madsrdf:Topic ;
+                madsrdf:authoritativeLabel "Preservation" ] ) ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh95005566> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Meat animals." ;
+    bflc:aap-normalized "meatanimals" ;
+    madsrdf:authoritativeLabel "Meat animals." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/authorities/subjects/sh98000270> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Kitchen gardens." ;
+    bflc:aap-normalized "kitchengardens" ;
+    madsrdf:authoritativeLabel "Kitchen gardens." ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> .
+
+<http://id.loc.gov/resources/instances/15587552> a bf:Instance,
+        bf:Print ;
+    rdfs:label "The backyard homestead" ;
+    bf:acquisitionSource [ a bf:AcquisitionSource ;
+            bf:identifiedBy [ a bf:StockNumber ;
+                    rdf:value "1295407" ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "QBI" ] ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2009-10-02T18:38:10"^^xsd:dateTime ;
+            bf:creationDate "2009-01-14"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T21:24:54-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "15587552" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $a xh09 2009-01-14 $i xh09 2009-01-14 to sl $e xh09 2009-01-14 to Dewey $a rd11 2009-01-15 $a xe04 2009-05-19 bk rec'd, to CIP ver. $f xj05 2009-05-26 Z-CipVer $g xj05 2009-05-26 (telework) to BCCD $a Barcode 00239792807 returned from bindery 2009-07-22 $t rf09 2009-10-02 to BCCD, c. 2" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:dimensions "23 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "367 p." ] ;
+    bf:hasItem <http://id.loc.gov/resources/items/15587552-050-14> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            rdf:value "ocn244420800" ],
+        [ a bf:Isbn ;
+            bf:qualifier "pbk. : alk. paper" ;
+            rdf:value "9781603421386" ],
+        [ a bf:Isbn ;
+            bf:qualifier "pbk. : alk. paper" ;
+            rdf:value "1603421386" ],
+        [ a bf:Lccn ;
+            rdf:value "  2009001338" ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/15587552> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:note [ a [ rdfs:resource "http://id.loc.gov/vocabulary/mnotetype/physical" ],
+                bf:Note ;
+            rdfs:label "ill. (some col.)" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Storey Pub." ] ;
+            bf:date "c2009" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "North Adams, MA" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2009"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/mau> ] ;
+    bf:provisionActivityStatement "North Adams, MA : Storey Pub., c2009." ;
+    bf:responsibilityStatement "edited by Carleen Madigan" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The backyard homestead" ;
+            bf:mainTitle "The backyard homestead" ],
+        [ a bf:Title ;
+            rdfs:label "The backyard homestead" ;
+            bf:mainTitle "The backyard homestead" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
+<http://id.loc.gov/resources/items/15587552-050-14> a bf:Item ;
+    bf:shelfMark [ a bf:ShelfMarkLcc ;
+            rdfs:label "SB321.B1434 2009" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ] .
+
+<http://id.loc.gov/resources/works/15587552> a bf:Text,
+        bf:Work ;
+    rdfs:label "The backyard homestead" ;
+    bflc:aap "Madigan, Carleen. backyard homestead" ;
+    bflc:aap-normalized "madigancarleenbackyardhomestead" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2009-10-02T18:38:10"^^xsd:dateTime ;
+            bf:creationDate "2009-01-14"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T21:24:54-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "15587552" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 2 shelf copies $x policy default" ;
+            lclocal:d955 "=955     $a xh09 2009-01-14 $i xh09 2009-01-14 to sl $e xh09 2009-01-14 to Dewey $a rd11 2009-01-15 $a xe04 2009-05-19 bk rec'd, to CIP ver. $f xj05 2009-05-26 Z-CipVer $g xj05 2009-05-26 (telework) to BCCD $a Barcode 00239792807 returned from bindery 2009-07-22 $t rf09 2009-10-02 to BCCD, c. 2" ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "641" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "22" ] ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "SB321" ;
+            bf:itemPortion ".B1434 2009" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2009003066> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/15587552> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85050212>,
+        <http://id.loc.gov/authorities/subjects/sh95005566>,
+        <http://id.loc.gov/authorities/subjects/sh98000270> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references (p. 354) and index." ],
+        <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:tableOfContents [ a bf:TableOfContents ;
+            rdfs:label "Start your own backyard homestead -- The home vegetable garden -- Backyard fruits and nuts -- Easy, fragrant herbs -- Homegrown grains -- Poultry for eggs and meat -- Meat and dairy -- Food from the wild." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "backyard homestead" ;
+            bf:mainTitle "The backyard homestead" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/rwo/agents/n2009003066> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Madigan, Carleen." ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n2009003066> .
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier ;
+    rdfs:label "volume" .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
+    rdfs:label "text" .
+
+<http://id.loc.gov/vocabulary/countries/mau> a bf:Place ;
+    rdfs:label "Massachusetts" .
+
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance ;
+    rdfs:label "monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media ;
+    rdfs:label "unmediated" .
+
+<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
+    rdfs:label "illustrations" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index" .
+
+<http://id.loc.gov/vocabulary/organizations/ocolc> a bf:Agent .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role ;
+    rdfs:label "Contributor" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "aacr" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "corrected or revised" ;
+    bf:code "c" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    bf:code "DLC" .
+
