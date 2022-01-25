@@ -1,0 +1,57 @@
+<div class="window" style="width: 875px;">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Collections, Services, Classes, &amp; Help 
+        {% if branch %}for Branch {{ branch }}{% endif %}
+      </div>
+    </div>
+    <div class="window-body">
+        <button onclick="browse('books')">
+        <img src="/static/img/address_book-0.png" alt="Book"/><br/>
+        Books
+        </button>
+        <button onclick="browse('video')">
+        <img src="/static/img/movie_maker-1.png" alt="Video &amp; Movies" /><br/>
+            Video 
+        </button>
+        <button onclick="browse('music')">
+        <img src="/static/img/cd_audio_cd_a-0.png" alt="Music" /><br/>
+            Music
+        </button>
+        <button>
+            <img src="/static/img/chat.png" alt="Chat" /><br/>
+            Chat
+        </button>
+        <button>
+            <img src="/static/img/mailbox_world.png" alt="Email Reference" /><br/>
+            E-mail
+        </button>
+        <button>
+            <img src="/static/img/help_book_cool-0.png" /><br/>
+            Help
+        </button>            
+        <button>
+            <img src="/static/img/calendar-2.png" alt="Events" /><br/>
+            Events
+        </button>
+        <button>
+            <img src="/static/img/art-classes.png" alt="Classes" /><br/>
+            Classes
+        </button>
+        <button onclick="window.location='/faq'">
+            FAQ
+        </button>
+        <button onclick="window.location='/'">
+            Home
+        </button>
+        <button>
+            Login
+        </button>
+    </div>
+  </div>
+  <script>
+  function browse(collection) {
+    window.location = `/browse/${collection}`
+
+  }
+</script>
