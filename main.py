@@ -78,6 +78,20 @@ def collection(request: Request, collection: str):
 def frequently_asked_questions(request: Request):
     return templates.TemplateResponse('faq.html', context={ 'request': request, 'branch': branch})
 
+@app.get("/staff/{member}")
+def staff(request: Request, member: str):
+    context = { 'request': request, 'branch': branch}
+    match member:
+        case "librarian":
+            return templates.TemplateResponse('eliza-james.html', context=context)
+        case 'cataloger':
+            return templates.TemplateResponse('dun.html', context=context)
+        case 'clerk':
+            return templates.TemplateResponse('jerms-a-ally.html', context=context)
+        case 'systems':
+            return templates.TemplateResponse('kumo.html', context=context)
+        case _:
+            return templates.TemplateResponse('staff.html', context=context)
 
 @app.get("/")
 def read_root(request: Request):
