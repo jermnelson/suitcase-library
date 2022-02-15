@@ -1,0 +1,24 @@
+
+<div>
+    <h3>Character Stats for {{ character.character.name }}</h3>
+    <dl>
+        <dt>Pronouns</dt>
+        {% for pronoun in character.character.pronouns %}
+        <dd>{{ pronoun }}</dd>
+        {% endfor %}
+        <dt>Classes</dt>
+        {% for class_ in character.character.class %}
+        <dd>{{ class_ }}</dd>
+        {% endfor %}
+        <dt>Race</dt>
+        {% for race in character.character.race %}
+        <dd>{{ race }}</dd>
+        {% endfor %}
+        <dt>Alignment</dt>
+        {% for alignment in character.character.alignment %}
+        <dd>{{ alignment }}</dd>
+        {% endfor %}
+        <dt>Experience Points</dt>
+        <dd>{{ character.character.experience_points }}</dd>
+    </dl>
+</div>
