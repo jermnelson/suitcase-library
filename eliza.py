@@ -3,21 +3,17 @@ import random
 import re
 from collections import namedtuple
 
-# Fix Python2/Python3 incompatibility
-try: input = raw_input
-except NameError: pass
-
 log = logging.getLogger(__name__)
 
 
-class Key:
+class Key(object):
     def __init__(self, word, weight, decomps):
         self.word = word
         self.weight = weight
         self.decomps = decomps
 
 
-class Decomp:
+class Decomp(object):
     def __init__(self, parts, save, reasmbs):
         self.parts = parts
         self.save = save
@@ -25,7 +21,7 @@ class Decomp:
         self.next_reasmb_index = 0
 
 
-class Eliza:
+class Eliza(object):
     def __init__(self):
         self.initials = []
         self.finals = []
@@ -44,38 +40,39 @@ class Eliza:
                 if not line.strip():
                     continue
                 tag, content = [part.strip() for part in line.split(':')]
-                if tag == 'initial':
-                    self.initials.append(content)
-                elif tag == 'final':
-                    self.finals.append(content)
-                elif tag == 'quit':
-                    self.quits.append(content)
-                elif tag == 'pre':
-                    parts = content.split(' ')
-                    self.pres[parts[0]] = parts[1:]
-                elif tag == 'post':
-                    parts = content.split(' ')
-                    self.posts[parts[0]] = parts[1:]
-                elif tag == 'synon':
-                    parts = content.split(' ')
-                    self.synons[parts[0]] = parts
-                elif tag == 'key':
-                    parts = content.split(' ')
-                    word = parts[0]
-                    weight = int(parts[1]) if len(parts) > 1 else 1
-                    key = Key(word, weight, [])
-                    self.keys[word] = key
-                elif tag == 'decomp':
-                    parts = content.split(' ')
-                    save = False
-                    if parts[0] == '$':
-                        save = True
-                        parts = parts[1:]
-                    decomp = Decomp(parts, save, [])
-                    key.decomps.append(decomp)
-                elif tag == 'reasmb':
-                    parts = content.split(' ')
-                    decomp.reasmbs.append(parts)
+                match tag:
+                    case 'initial':
+                        self.initials.append(content)
+                    case 'final':
+                        self.finals.append(content)
+                    case 'quit':
+                        self.quits.append(content)
+                    case 'pre':
+                        parts = content.split(' ')
+                        self.pres[parts[0]] = parts[1:]
+                    case 'post':
+                        parts = content.split(' ')
+                        self.posts[parts[0]] = parts[1:]
+                    case 'synon':
+                        parts = content.split(' ')
+                        self.synons[parts[0]] = parts
+                    case 'key':
+                        parts = content.split(' ')
+                        word = parts[0]
+                        weight = int(parts[1]) if len(parts) > 1 else 1
+                        key = Key(word, weight, [])
+                        self.keys[word] = key
+                    case 'decomp':
+                        parts = content.split(' ')
+                        save = False
+                        if parts[0] == '$':
+                            save = True
+                            parts = parts[1:]
+                        decomp = Decomp(parts, save, [])
+                        key.decomps.append(decomp)
+                    case 'reasmb':
+                        parts = content.split(' ')
+                        decomp.reasmbs.append(parts)
 
     def _match_decomp_r(self, parts, words, results):
         if not parts and not words:
