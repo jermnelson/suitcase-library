@@ -1,7 +1,7 @@
 1.  **EXT. Suitcase Library in a parking lot**
     A strange suitcase containing wooden shelves on the outside with a closed umbrella
     suddenly shakes and what looks like a small door opens and out steps a bald, middle-aged 
-    white man, wearing short shelves, round-rim glasses, and an polo shirt with khaki pants who
+    white man, wearing a short sleve polo shirt, round-rim glasses, khaki pants who
     seems to grow larger as he steps out onto the pavement.
 
                                    JERMS A. ALLY
@@ -25,8 +25,8 @@
 
                                     JERMS A. ALLY
                      A library isn't a specific location or building but is about people and 
-                     information. We are a traveling library and when we 
-                     visit a location, we temporary expand our library collections and services.
+                     information. We are a traveling library and when visiting a location, 
+                     we temporary expand our library collections and services.
 
                                    LIBRARY PATRON #2
                      What! Why? Why do we need this? (turning towards their friend) Something 
@@ -49,7 +49,7 @@
 2.  **INT. A small room with a desk surrounded by book shelves
     Behind the reference desk is a middle-aged black woman, with short black hair with streaks of 
     gray with a pair of glasses perched upon her nose. Jerms A. Ally is standing to her left and 
-    looks back as the patron one steps through to the floor and patron two rights themself.
+    looks back as patron one steps through to the floor and patron two rights themself.
 
                                    ELIZA JAMES
                      Welcome to the library! How can we help you?
