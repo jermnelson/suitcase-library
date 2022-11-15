@@ -1,3 +1,4 @@
+# Modified from https://github.com/wadetb/eliza
 import logging
 import random
 import re
@@ -225,7 +226,7 @@ class Eliza(object):
 
 def main():
     eliza = Eliza()
-    eliza.load('doctor.txt')
+    eliza.load('reference-librarian.txt')
     eliza.run()
 
 if __name__ == '__main__':
