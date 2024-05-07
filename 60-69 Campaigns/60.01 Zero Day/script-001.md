@@ -1,7 +1,7 @@
 1.  **EXT. Suitcase Library in a parking lot**
     A strange suitcase containing wooden shelves on the outside with a closed umbrella
     suddenly shakes and what looks like a small door opens and out steps a bald, middle-aged 
-    white man, wearing a short sleve polo shirt, round-rim glasses, khaki pants who
+    white man, wearing a short sleeve polo shirt, round-rim glasses, khaki pants who
     seems to grow larger as he steps out onto the pavement.
 
                                    JERMS A. ALLY
